@@ -1,0 +1,36 @@
+.navigation {
+  position: relative;
+
+  &__bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    background-color: var(--color-primary-light);
+    position: fixed;
+    bottom: 0;
+    z-index: 5000;
+  }
+  &__icon {
+    height: 5.5rem;
+    transition: all .3s ease-in;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__nav {
+    height: calc(100vh - 6rem);
+    width: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4500;
+    background-image: linear-gradient(to right top,
+      var(--color-primary-light) 0%,
+      var(--color-primary-light) 50%,
+      var(--color-secondary-light) 85%)
+  }
+  transition: width .8s cubic-bezier(0.86, 0, 0.07, 1);
+}
