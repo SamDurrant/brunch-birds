@@ -3,28 +3,32 @@
 .heading-tertiary {
   font-family: 'Alegreya', serif;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   line-height: 1.7;
 }
 
 .heading-primary {
   font-size: 8rem;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   text-shadow: var(--shadow-text-dark);
   text-transform: uppercase;
+  padding: 0 3rem;
 }
 
 .heading-secondary {
   font-size: 6rem;
   color: var(--color-secondary);
+  color: var(--color-secondary);
   border-bottom: 2px solid var(--color-secondary);
+  letter-spacing: 2px;
   padding: 0 5rem;
   margin-bottom: 3rem;
 }
 
 .heading-tertiary {
   font-size: 4rem;
-  color: var(--color-grey-light-1);
+  color: var(--color-grey-medium);
+  
   &-sub {
     text-align: center;
     color: var(--color-secondary-light);
@@ -48,8 +52,7 @@
 .heading-blurb--dark {
   background-color: rgba(46, 56, 68, 0.6);
   border-radius: 1.5rem;
-  color: var(--color-primary-light);
-  text-shadow: var(--shadow-text-dark);
+  color: var(--color-secondary-light);
   font-size: 2.5rem;
   padding: 2rem 3rem;
   margin: 2rem 3rem;
@@ -111,7 +114,7 @@
   width: 80%;
   margin: 5rem auto 0;
   padding: 4rem 10%;
-  background-color: var(--color-grey-light-2);
+  background-color: var(--color-secondary-light);
   box-shadow: var(--shadow-dark-small);
   letter-spacing: 1px;
   text-align: center;
