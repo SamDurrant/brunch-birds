@@ -1,0 +1,19 @@
+.header {
+  background-image: linear-gradient(
+    to right, 
+    rgba(87, 106, 129, 0.4), 
+    rgba(46, 56, 68, 0.8)), 
+    url('../images/hero_image.jpg');
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  display: flex;
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+    justify-content: center;
+    align-items: center;
+  }
+}

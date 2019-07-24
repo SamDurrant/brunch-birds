@@ -1,0 +1,47 @@
+.container {
+  max-width: 125rem;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 15rem 0;
+}
+
+.section-menu,
+.section-map,
+.section-reviews {
+  background-color: var(--color-grey-light-1);
+}
+
+.section-about {
+  background-color: var(--color-white);
+}
+
+.section-hours-info,
+.section-form {
+  background-color: var(--color-grey-medium);
+}
+
+.heading-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 80%;
+  background-image: linear-gradient(105deg,
+    transparent 40%,
+    rgba(232, 235, 239, .8) 40%),
+    url('../images/pattern.jpg');
+  background-size: cover;
+  margin-top: 6rem;
+  padding: 3rem;
+}
+
+.slide-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}

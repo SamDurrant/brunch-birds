@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  background-color: rgba(212, 171, 38, 0.6);
+  color: var(--color-grey-dark-1);
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  font-size: 2rem;
+}
