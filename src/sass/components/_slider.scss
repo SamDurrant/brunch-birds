@@ -24,6 +24,11 @@
   border: 5px solid var(--color-grey-dark-1);
   display: none;
 
+  @include respond(phone) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   &__side {
     flex: 0 0 50%;
     display: flex;
@@ -42,10 +47,19 @@
     font-style: italic;
     letter-spacing: 1px;
 
+    @include respond(phone) {
+      font-size: 2rem;
+    }
+
     &--reviewer {
       font-size: 4rem;
       margin-top: 2rem;
       border-bottom: 2px solid var(--color-grey-dark-1);
+
+      @include respond(phone) {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+      }
     }
   }
 }

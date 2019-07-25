@@ -5,6 +5,13 @@
 
 .section {
   padding: 15rem 0;
+
+  @include respond(tab-land) {
+    padding: 10rem 0;
+  }
+  @include respond(tab-port) {
+    padding: 7rem 0;
+  }
 }
 
 .section-menu,
@@ -29,8 +36,19 @@
   align-items: center;
 }
 
-.form-container {
+.form-container,
+.slide-container {
   width: 80%;
+
+  @include respond(tab-land) {
+    width: 85%;
+  }
+  @include respond(tab-port) {
+    width: 100%;
+  }
+}
+
+.form-container {
   background-image: linear-gradient(105deg,
     transparent 40%,
     rgba(232, 235, 239, .8) 40%),
@@ -38,10 +56,34 @@
   background-size: cover;
   margin-top: 6rem;
   padding: 3rem;
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(105deg,
+    transparent 30%,
+    rgba(232, 235, 239, .8) 30%),
+    url('../images/pattern.jpg');
+  }
+  @include respond(phone) {
+    margin-top: 3rem;
+    padding: 2rem;
+  }
 }
 
 .slide-container {
-  width: 80%;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.map-box {
+  width: 70%;
+  height: 75vh;
+  margin: 6rem auto;
+  border: 5px solid var(--color-primary);
+
+  @include respond(tab-land) {
+    width: 80%;
+  }
+  @include respond(tab-port) {
+    width: 90%;
+  }
 }

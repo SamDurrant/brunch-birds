@@ -4,6 +4,10 @@
   box-shadow: var(--shadow-dark);
   background-color: var(--color-primary-light);
 
+  @include respond(tab-port) {
+    width: 90%;
+  }
+
   &__tab {
     display: flex;
     align-items: center;
@@ -23,6 +27,27 @@
   margin: 4rem 6rem;
   padding: 4rem;
   border: 2px solid var(--color-grey-medium);
+
+  @include respond(tab-port) {
+    margin: 2rem 3rem;
+    padding: 2rem;
+  }
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  &--side {
+    @include respond(phone) {
+      flex-direction: row;
+    }
+
+    & .item {
+      @include respond(phone) {
+        flex: 0 0 50%;
+        padding: 1rem;
+      }
+    }
+  }
 }
 
 .item {
@@ -31,11 +56,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include respond(tab-port) {
+    padding: 0 2rem 0 0;
+    margin-right: auto;
+  }
+  @include respond(phone) {
+    padding: 0 0 3rem;
+    margin: 0;
+  }
   
   &__price {
     padding: 2rem 0 1rem;
     margin-bottom: 4rem;
     border-bottom: 2px solid var(--color-grey-medium);
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
 
     &--side {
       padding: 1rem 1rem .5rem;
@@ -52,6 +90,14 @@
   flex: 0 0 50%;
   background-color: var(--color-grey-medium);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+  @include respond(tab-port) {
+    flex: 0 0 40%;
+  }
+  @include respond(phone) {
+    width: 80%;
+    margin: 0 auto;
+  }
 
   .img-box__photo {
     width: 100%;
