@@ -1,4 +1,4 @@
-const MAP_KEY = MAP_TOKEN;
+const MAP_KEY = process.env.MAP_TOKEN;
 
 export default Map = {
   map: L.map('map', {

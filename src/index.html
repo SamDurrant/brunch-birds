@@ -9,9 +9,6 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
-   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-   crossorigin=""></script>
   <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,700|Lato:400,700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
@@ -22,11 +19,11 @@
       <img src="images/owlLogoClosed.svg" alt="Brunch Birds logo" class="navigation__icon">
     </div>
     <ul class="navigation__nav">
+      <li class="navigation__nav-item"><a href="#about" class="navigation__nav-link">About</a></li>
       <li class="navigation__nav-item"><a href="#food" class="navigation__nav-link">Menu</a></li>
       <li class="navigation__nav-item"><a href="#hours" class="navigation__nav-link">Hours</a></li>
       <li class="navigation__nav-item"><a href="#location" class="navigation__nav-link">Location</a></li>
       <li class="navigation__nav-item"><a href="#contact" class="navigation__nav-link">Contact</a></li>
-      <li class="navigation__nav-item"><a href="#about" class="navigation__nav-link">About</a></li>
     </ul>
   </div>
   <div class="container">
@@ -38,6 +35,16 @@
           could ever dream up.</p>
       </div>
     </header>
+
+    <section id="about" class="section section-about">
+      <div class="heading-box">
+        <h2 class="heading-secondary">About Us</h2>
+      </div>
+      <div class="about-info">
+        <p>Brunch Birds is a locally owned restaurant guided by a responsibility to maintain harmony with nature. Our menu is intentionally crafted in such a way that we are able to support and celebrate local farms and ranches. Driven by a commitment to uphold a more sustainable business model, we are in the profession of redefining real food for our community.</p>
+        <p>We believe in the power of the table, sharing food and sharing stories. These moments deepen the ties within the community we care about, strengthening our relationships and our relationship with food. We are passionately driven by our mission to provide healthier options and creating new connections that will not only inspire people to equate nutrition with wellness, but also with bold and playful flavors. Let us reawaken your palate.</p>
+      </div>
+    </section>
 
     <section id="food" class="section section-menu">
       <div class="heading-box">
@@ -594,28 +601,21 @@
       </div>
     </section>
 
-    <section id="about" class="section section-about">
-      <div class="heading-box">
-        <h2 class="heading-secondary">About Us</h2>
-      </div>
-      <div class="about-info">
-        <p>Brunch Birds is a locally owned restaurant guided by a responsibility to maintain harmony with nature. Our menu is intentionally crafted in such a way that we are able to support and celebrate local farms and ranches. Driven by a commitment to uphold a more sustainable business model, we are in the profession of redefining real food for our community.</p>
-        <p>We believe in the power of the table, sharing food and sharing stories. These moments deepen the ties within the community we care about, strengthening our relationships and our relationship with food. We are passionately driven by our mission to provide healthier options and creating new connections that will not only inspire people to equate nutrition with wellness, but also with bold and playful flavors. Let us reawaken your palate.</p>
-      </div>
-    </section>
-
     <footer class="footer">
       <div class="social">
         <p class="social__blurb">Follow us to stay up to date on events like "Brunch &amp; Board Games" and "Pupcake Parties"!</p>
         <div class="social__icons-container">
-          <a href="#" class="social__link"><i class="icon ion-logo-instagram social__icon"></i></a>
-          <a href="#" class="social__link"><i class="icon ion-logo-twitter social__icon"></i></a>
-          <a href="#" class="social__link"><i class="icon ion-logo-facebook social__icon"></i></a>
+          <a href="https://www.instagram.com" target="_blank" aria-label="link to instagram" class="social__link"><i class="icon ion-logo-instagram social__icon"></i></a>
+          <a href="https://www.twitter.com" target="_blank" aria-label="link to twitter" class="social__link"><i class="icon ion-logo-twitter social__icon"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="link to facebook" class="social__link"><i class="icon ion-logo-facebook social__icon"></i></a>
         </div>
       </div>
       <p class="copyright">&copy; Samantha Durrant 2019</p>
     </footer>
   </div>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
 </body>
 
 </html>

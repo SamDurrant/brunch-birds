@@ -16,6 +16,10 @@
     background-color: var(--color-primary);
     border-bottom: 2px solid var(--color-grey-dark-1);
 
+    @include respond(phone) {
+      padding: 1rem 2rem;
+    }
+
     & + div {
       height: fit-content;
     }

@@ -17,6 +17,13 @@
   transition: all .3s;
   padding-bottom: .5rem;
 
+  @include respond(phone) {
+    font-size: 6rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 2rem;
+  }
+
   &:hover,
   &:focus {
     outline: none;
