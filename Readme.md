@@ -2,13 +2,12 @@
 A restaurant web design inspired by various brunch spots around the US that are focused on providing healthier and locally sourced menu options.
 
 ## Live Demo
----
-A live demo has been deployed on Netlify.
 
+A live demo has been deployed on Netlify at
 [Brunch Birds](https://brunchbirds.netlify.com/)
 
 ## Motivation
----
+
 I am passionate about healthy eating and wanted to create a well-thought out restaurant website that was easy to navigate. 
 
 >### **Technical Goals**
@@ -17,11 +16,11 @@ I am passionate about healthy eating and wanted to create a well-thought out res
 > 3. Create a custom Webpack configuration to bundle my files.
 > ### **Design Goals**
 > 1. Create a responsive website that looks clean on both mobile and desktop.
-> 2. Organize content so that users are able to quickly find the information they are looking for, particularly the menu.
+> 2. Organize content so that users are able to quickly find the information they are looking for, particularly the food menu.
 >
 
 ## Technologies
----
+
 * HTML
 * Sass
 * Javascript
@@ -30,18 +29,18 @@ I am passionate about healthy eating and wanted to create a well-thought out res
 * Webpack
 
 ## Features
----
-* A fixed navigation allows users to easily find what they are looking for within the website.
+
+* A fixed navigation allows users to easily find what they are looking for within the website
 * Map shows users the location of Brunch Bird's restaurant.
-* Carousel slider rotates through customer reviews.
-* Food menu has drop-down sections allowing users to easily navigate to find what they are looking for. 
+* Carousel slider rotates through customer reviews
+* Food menu has drop-down sections allowing users to easily navigate to find what they are looking for
 
 
 ## Challenges
----
+
 * I had used Webpack within a tutorial project and saw how useful it could be to automate tasks and do things like bundling, compiling and minimizing. This ended up being more complex than I had anticipated, but it did help me become more proficient in reading documentation.
 * Allowing the user to click on the dots to change the current slide in the carousel would cause the rotation through slides to fritz out. I had to separate the timer function from the rendering function, making sure to clear it and reset it when a new slide was being rendered.
-* Hiding api key
+* Learning how to hide an API key was a little bit of a challenge. I did not want to upload my API key to Github, so I had to do some research into process.env files.
 * I had issues with the navigation menu closing properly. I had set the animation-fill-mode to "forwards", which caused the navigation items to jump offscreen before jumping back to animate themselves offscreen. I found that using "both" allowed the items to maintain their position on both sides of the animation.
 > ### **Challenges: the funnies section**
 > * While working on the nav bar, I accidentally covered the entire screen in a transparent fixed div container so nothing was able to be clicked on the site. It wasn't until I was watching things in the developer console until I figured out what was going on.
@@ -49,7 +48,7 @@ I am passionate about healthy eating and wanted to create a well-thought out res
 > * I decided to change a variable name late in the game, not realizing that I hadn't changed it as well in a sass file. I spent way too long on this. I have since found out that VS Code has a rename symbol command.
 
 ## Future Additions
----
+
 * A vendor/purveyor list of local farms, ranches and ingredient resources
 * Expanding to multiple locations which would allow for more functionality with the Leaflet map
 * Creating a blog for greenhouse/garden updates
