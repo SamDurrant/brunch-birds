@@ -6,9 +6,9 @@
 }
 
 .btn--toggle {
-  font-size: 7.25rem;  
-  color: var(--color-grey-medium);
   background-color: var(--color-primary);
+  color: var(--color-grey-medium);
+  font-size: 7.25rem;  
   border: 2px solid var(--color-grey-medium);
   border-radius: 50%;
   width: 5.5rem;
@@ -19,8 +19,8 @@
 
   @include respond(phone) {
     font-size: 6rem;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     line-height: 2rem;
   }
 

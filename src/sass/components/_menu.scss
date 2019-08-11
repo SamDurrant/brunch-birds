@@ -1,19 +1,19 @@
 .menu {
   width: 80%;
-  margin: 0 auto;
-  box-shadow: var(--shadow-dark);
   background-color: var(--color-primary-light);
+  box-shadow: var(--shadow-dark);
+  margin: 0 auto;
 
   @include respond(tab-port) {
     width: 90%;
   }
 
   &__tab {
+    background-color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 4rem;
-    background-color: var(--color-primary);
     border-bottom: 2px solid var(--color-grey-dark-1);
 
     @include respond(phone) {

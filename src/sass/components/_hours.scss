@@ -6,8 +6,8 @@
     url('../images/brunchStorefront.jpg');
   background-size: cover;
   background-position: center;
-  margin: 6rem 10rem;
   border-radius: 1.5rem;
+  margin: 6rem 10rem;
   overflow: hidden;
 
   @include respond(tab-land) {

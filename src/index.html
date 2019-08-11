@@ -19,11 +19,11 @@
       <img src="images/owlLogoClosed.svg" alt="Brunch Birds logo" class="navigation__icon">
     </div>
     <ul class="navigation__nav">
-      <li class="navigation__nav-item"><a href="#about" class="navigation__nav-link">About</a></li>
-      <li class="navigation__nav-item"><a href="#food" class="navigation__nav-link">Menu</a></li>
-      <li class="navigation__nav-item"><a href="#hours" class="navigation__nav-link">Hours</a></li>
-      <li class="navigation__nav-item"><a href="#location" class="navigation__nav-link">Location</a></li>
-      <li class="navigation__nav-item"><a href="#contact" class="navigation__nav-link">Contact</a></li>
+      <li class="navigation__nav-item"><a href="#about" aria-label="go to about us section" class="navigation__nav-link">About</a></li>
+      <li class="navigation__nav-item"><a href="#food" aria-label="go to food menu" class="navigation__nav-link">Menu</a></li>
+      <li class="navigation__nav-item"><a href="#hours" aria-label="go to hours and address" class="navigation__nav-link">Hours</a></li>
+      <li class="navigation__nav-item"><a href="#location" aria-label="go to map with location" class="navigation__nav-link">Location</a></li>
+      <li class="navigation__nav-item"><a href="#contact" aria-label="go to contact form" class="navigation__nav-link">Contact</a></li>
     </ul>
   </div>
   <div class="container">
@@ -530,7 +530,7 @@
         <h2 class="heading-secondary">Get in touch!</h2>
       </div>
       <div class="form-container">
-        <form action="#" class="form">
+        <form name="contact" class="form" method="POST" data-netlify="true">
           <div class="form__group">
             <input type="text" id="name" class="form__input" placeholder="Full Name" required>
             <label for="name" class="form__label">Full Name</label>

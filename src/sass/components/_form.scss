@@ -9,8 +9,8 @@
   }
 
   &__group {
-    flex: 0 0 25%;
     width: 50%;
+    flex: 0 0 25%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -36,16 +36,16 @@
   }
 
   &__input {
+    width: 85%;
+    background-color: var(--color-white);
+    color: inherit;
     font-size: 1.5rem;
     font-family: inherit;
-    color: inherit;
-    width: 85%;
-    margin: 1rem 3rem;
-    padding: 1.5rem 3rem;
+    box-shadow: var(--shadow-dark-small);
     border-radius: 1rem;
     border: none;
-    background-color: var(--color-white);
-    box-shadow: var(--shadow-dark-small);
+    margin: 1rem 3rem;
+    padding: 1.5rem 3rem;
     transition: all .4s ease-in;
 
     @include respond(phone) {
@@ -65,9 +65,9 @@
     }
 
     &::-webkit-input-placeholder {
+      color: var(--color-grey-light-2);
       font-family: 'Lato', sans-serif;
       font-size: 1.5rem;
-      color: var(--color-grey-light-2);
       padding: 0 3rem;
     }
   }

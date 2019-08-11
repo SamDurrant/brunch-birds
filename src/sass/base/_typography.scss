@@ -18,7 +18,6 @@
 .heading-secondary {
   font-size: 6rem;
   color: var(--color-secondary);
-  color: var(--color-secondary);
   border-bottom: 2px solid var(--color-secondary);
   letter-spacing: 2px;
   padding: 0 5rem;
@@ -30,11 +29,11 @@
   color: var(--color-grey-medium);
   
   &-sub {
+    width: 50%;
     text-align: center;
     color: var(--color-secondary-light);
     border-bottom: 2px solid var(--color-secondary-light);
     margin: 4rem auto 0;
-    width: 50%;
   }
 }
 
@@ -44,18 +43,18 @@
   font-family: 'Alegreya', serif;
   font-weight: 400;
   font-style: italic;
+  text-align: center;
   letter-spacing: 1px;
   line-height: 1.5;
 }
 
 .heading-blurb--dark {
   background-color: rgba(46, 56, 68, 0.6);
-  border-radius: 1.5rem;
   color: var(--color-secondary-light);
   font-size: 2.5rem;
+  border-radius: 1.5rem;
   padding: 2rem 3rem;
   margin: 2rem 3rem;
-  text-align: center;
 
   @include respond(phone) {
     padding: 1rem 2rem;
@@ -65,7 +64,6 @@
 }
 
 .heading-blurb--light {
-  text-align: center;
   padding: 4rem 35rem 8rem;
 
   @include respond(tab-land) {
@@ -80,19 +78,23 @@
 }
 
 .social__blurb {
-  color: var(--color-secondary-light);font-size: 2.5rem;
+  color: var(--color-secondary-light);
+  font-size: 2.5rem;
   padding: 1rem 4rem 3rem;
-  text-align: center;
+
+  @include respond(phone) {
+    padding: 1rem 1rem 3rem;
+  }
 }
 
 .item {
   &__header {
+    color: var(--color-secondary-light);
     font-size: 2.75rem;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: var(--color-secondary-light);
 
     @include respond(tab-port) {
       font-size: 2.25rem;
@@ -141,12 +143,12 @@
 
 .about-info {
   width: 80%;
-  margin: 5rem auto 0;
-  padding: 4rem 10%;
   background-color: var(--color-secondary-light);
   box-shadow: var(--shadow-dark-small);
   letter-spacing: 1px;
   text-align: center;
+  margin: 5rem auto 0;
+  padding: 4rem 10%;
 
   @include respond(phone) {
     width: 90%;
